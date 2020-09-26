@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header{
+    height: 12vh;
+    background-color: #21C962;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container h1{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.logo-container img{
+    height: 13vh;
+}
+
+.hamburger{
+    cursor: pointer;
+}
+
+.hamburger:hover{
+    opacity: 0.7;
+}
+
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+/* Main */
+
+main{
+    background-color: #1E1F23;
+    min-height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    padding: 0 250px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcome-text{
+    font-size: 25px;
+    text-align: center;
+}
+
+.welcome-text a{
+    font-size: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.welcome-text a:hover{
+    opacity: 0.8;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+.about-text{
+    font-size: 20px;
+}
+
+.thank{ 
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sidebar{
+    display: none;
+    min-width: 200px;
+    height: 78vh;
+    background-color: #323235;
+}
+
+.side-links{
+    margin: 10px 0;
+    line-height: 50px;
+    list-style: none;
+}
+
+.side-links li{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding-left: 10px;
+}
+
+.side-links li:hover{
+    opacity: 0.8;
+}
+
+.side-links a{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 18.5px;
+    color: whitesmoke;
+}
+
+.fas, .fab {
+    color: whitesmoke;
+    height: 18.5px !important;
+    margin-right: 10px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #21C962;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+/* Making everything Responsive */
+
+@media only screen and (max-width: 1200px) {
+    
+    article{
+        padding: 0 200px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    
+    article{
+        padding: 0 150px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    article{
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    article{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+    
+    .logo-container h1{
+        margin-left: 10px;
+        font-size: 27px;
+    }
+    
+    article{
+        padding: 0 30px;
+    }
+
+    .welcome-text{
+        font-size: 20px;
+    }
+    
+    .welcome-text a{
+        font-size: 25px;
+    }
+
+    hr{
+        margin: 15px 0;
+    }
+    
+    .about-text{
+        font-size: 18px;
+    }
+    
+    .thank{ 
+        padding: 5px 0;
+    }
+
+    .sidebar{
+        min-width: 185px;
+    }
+
+    .side-links a {
+        font-size: 16.5px;
+    }
+
+    footer p{
+        font-size: 18px;
+    }
+
+    .fas, .fab {
+        height: 16.5px !important;
+        margin-right: 8px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+
+    article{
+        padding: 0 10px;
+    }
+
+    .logo-container h1{
+        margin-left: 5px;
+        font-size: 22px;
+        text-align: start;
+    }
+    
+    article{
+        padding: 0 8px;
+    }
+
+    .welcome-text{
+        font-size: 18px;
+    }
+    
+    .welcome-text a{
+        font-size: 23px;
+    }
+
+    hr{
+        margin: 10px 0;
+    }
+    
+    .about-text{
+        font-size: 16.5px;
+    }
+    
+    .thank{ 
+        padding: 3px 0;
+    }
+
+    .sidebar{
+        min-width: 170px;
+    }
+
+    .side-links a {
+        font-size: 14px;
+    }
+
+    footer p{
+        font-size: 16.5px;
+    }
+
+    .fas, .fab {
+        height: 14px !important;
+        margin-right: 6px;
+    }
+
+    .line{
+        width: 20px;
+        height: 2px;
+    }
+}
